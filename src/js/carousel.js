@@ -4,8 +4,8 @@
  */
 (function () {
     const track = document.getElementById('carouselTrack');
-    const prevBtn = document.getElementById('carouselPrev');
-    const nextBtn = document.getElementById('carouselNext');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
     const dotsContainer = document.getElementById('carouselDots');
 
     if (!track) return;
