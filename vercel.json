@@ -1,6 +1,7 @@
 {
     "version": 2,
     "name": "top-fasteners",
+    "outputDirectory": "dist",
     "cleanUrls": true,
     "headers": [
         {
