@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products — Top Fasteners | Power Tools, Bolts, Plumbing & More</title>
+    <meta name="description"
+        content="Browse Top Fasteners' complete range of power tools, bolts & nuts, cutting tools, plumbing pipes, and paint & coatings. Quality industrial supplies.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Products — Top Fasteners">
+    <meta property="og:description" content="Complete range of power tools, fasteners, plumbing and paint supplies.">
+    <meta property="og:image" content="../assets/images/logo-banner.png">
+    <meta property="og:url" content="https://darshanp-cpu.github.io/Top-Fasteners/products.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Top Fasteners",
+    "url": "https://darshanp-cpu.github.io/Top-Fasteners/",
+    "logo": "https://darshanp-cpu.github.io/Top-Fasteners/assets/images/logo-banner.png"
+  }
+  </script>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">
+                <img src="../assets/images/logo.png" alt="Top Fasteners Logo" width="45" height="45">
+                <span>Top Fasteners</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="Menu toggle" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <main>
+        <!-- Products Hero -->
+        <section class="products-hero">
+            <div class="container">
+                <h1>Our <span class="text-green">Products</span></h1>
+                <p style="margin:var(--space-sm) auto 0;">Browse our full range of industrial tools, fasteners, plumbing
+                    supplies and coatings.</p>
+            </div>
+        </section>
+
+        <!-- Products Layout -->
+        <section class="section">
+            <div class="container">
+
+                <!-- Mobile Filter Toggle -->
+                <button class="mobile-filter-toggle" id="filterToggle">☰ Filter Products</button>
+
+                <div class="products-layout">
+
+                    <!-- Filter Sidebar -->
+                    <aside class="filter-sidebar" id="filterSidebar">
+                        <div class="filter-section">
+                            <h4>Category</h4>
+                            <label class="filter-option">
+                                <input type="checkbox" value="power-tools" data-filter="category" checked>
+                                Power Tools
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="bolts-nuts" data-filter="category" checked>
+                                Bolts & Nuts
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="cutting-tools" data-filter="category" checked>
+                                Cutting Tools
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="plumbing" data-filter="category" checked>
+                                Plumbing Pipes
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="paint" data-filter="category" checked>
+                                Paint & Coatings
+                            </label>
+                        </div>
+
+                        <div class="filter-section">
+                            <h4>Size</h4>
+                            <label class="filter-option">
+                                <input type="checkbox" value="small" data-filter="size" checked>
+                                Small
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="medium" data-filter="size" checked>
+                                Medium
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="large" data-filter="size" checked>
+                                Large
+                            </label>
+                        </div>
+
+                        <div class="filter-section">
+                            <h4>Brand</h4>
+                            <label class="filter-option">
+                                <input type="checkbox" value="makita" data-filter="brand" checked>
+                                Makita
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="bosch" data-filter="brand" checked>
+                                Bosch
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="mat-weld" data-filter="brand" checked>
+                                MAT Weld
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="generic" data-filter="brand" checked>
+                                Generic / Unbranded
+                            </label>
+                        </div>
+
+                        <button class="btn btn-primary btn-small" style="width:100%;margin-top:var(--space-sm);"
+                            id="clearFilters">Reset Filters</button>
+                    </aside>
+
+                    <!-- Product Grid -->
+                    <div class="products-grid" id="productsGrid">
+
+                        <!-- ===== POWER TOOLS ===== -->
+                        <div class="category-header" id="power-tools">
+                            <h3>⚡ Power Tools</h3>
+                        </div>
+
+                        <div class="card product-card" data-category="power-tools" data-size="medium"
+                            data-brand="makita">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/power-drill.jpg" alt="Makita HP1630 Impact Drill 16mm"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Power Tool</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Makita</span>
+                                <h4>HP1630 Impact Drill 16mm</h4>
+                                <p>Premium impact drill with 710W motor. Ideal for drilling into concrete, steel, and
+                                    wood.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <div class="card product-card" data-category="power-tools" data-size="large"
+                            data-brand="mat-weld">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/welder.jpg" alt="MAT Weld TXT-400 Inverter Welding Machine"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Power Tool</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">MAT Weld</span>
+                                <h4>TXT-400 Inverter Welder</h4>
+                                <p>Heavy-duty 400A inverter welding machine. IGBT module technology for reliable arc
+                                    performance.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <div class="card product-card" data-category="power-tools" data-size="medium"
+                            data-brand="bosch">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/power-drill.jpg" alt="Bosch Angle Grinder 115mm"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Power Tool</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Bosch</span>
+                                <h4>Angle Grinder 115mm</h4>
+                                <p>Compact 720W angle grinder for cutting, grinding and polishing metal surfaces.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <!-- ===== BOLTS & NUTS ===== -->
+                        <div class="category-header" id="bolts-nuts">
+                            <h3>🔩 Bolts & Nuts</h3>
+                        </div>
+
+                        <div class="card product-card" data-category="bolts-nuts" data-size="small"
+                            data-brand="generic">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/bolts-display.jpg" alt="Hex Bolt and Nut assortment set"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Fastener</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Industrial Grade</span>
+                                <h4>Hex Bolt & Nut Assortment</h4>
+                                <p>Complete assortment of galvanized hex bolts and nuts in M6 to M20 sizes. Grade 8.8.
+                                </p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <div class="card product-card" data-category="bolts-nuts" data-size="medium"
+                            data-brand="generic">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/bolts-display.jpg" alt="Anchor Bolts and U-bolts"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Fastener</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Industrial Grade</span>
+                                <h4>Anchor Bolts & U-Bolts</h4>
+                                <p>Heavy-duty anchor bolts, U-bolts, and J-bolts for structural and foundation
+                                    applications.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <div class="card product-card" data-category="bolts-nuts" data-size="small"
+                            data-brand="generic">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/bolts-display.jpg" alt="Spring Washers and Flat Washers"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Fastener</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Industrial Grade</span>
+                                <h4>Washers & Lock Nuts</h4>
+                                <p>Spring washers, flat washers, lock nuts and nyloc nuts. Zinc plated, galvanized and
+                                    stainless.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <!-- ===== CUTTING TOOLS ===== -->
+                        <div class="category-header" id="cutting-tools">
+                            <h3>🪚 Cutting Tools</h3>
+                        </div>
+
+                        <div class="card product-card" data-category="cutting-tools" data-size="medium"
+                            data-brand="generic">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/cutting-disc.svg" alt="Metal Cutting Discs 115mm"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Cutting Tool</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Premium Grade</span>
+                                <h4>Cutting Discs 115mm</h4>
+                                <p>High-performance metal cutting discs for angle grinders. Clean cuts on steel,
+                                    stainless, and iron.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <div class="card product-card" data-category="cutting-tools" data-size="medium"
+                            data-brand="generic">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/cutting-disc.svg" alt="Hacksaw Blades and Frames"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Cutting Tool</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Premium Grade</span>
+                                <h4>Hacksaw Frames & Blades</h4>
+                                <p>Professional hacksaw frames with bi-metal blades for precision hand-cutting of
+                                    metals.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <div class="card product-card" data-category="cutting-tools" data-size="large"
+                            data-brand="bosch">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/cutting-disc.svg" alt="Diamond Cutting Blade 230mm"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Cutting Tool</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Bosch</span>
+                                <h4>Diamond Blade 230mm</h4>
+                                <p>Turbo-segmented diamond blade for cutting concrete, brick, tile and natural stone.
+                                </p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <!-- ===== PLUMBING PIPES ===== -->
+                        <div class="category-header" id="plumbing">
+                            <h3>🔧 Plumbing Pipes</h3>
+                        </div>
+
+                        <div class="card product-card" data-category="plumbing" data-size="large" data-brand="generic">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/plumbing.jpg" alt="HDPE Compression Fittings"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Plumbing</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">HDPE Range</span>
+                                <h4>Compression Fittings</h4>
+                                <p>Full range of HDPE compression fittings — elbows, tees, couplings, and reducers. 20mm
+                                    to 110mm.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <div class="card product-card" data-category="plumbing" data-size="large" data-brand="generic">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/plumbing.jpg" alt="HDPE Pipe various diameters"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Plumbing</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">HDPE Range</span>
+                                <h4>HDPE Pipe</h4>
+                                <p>High-density polyethylene pipe for water supply and irrigation. Class 6, 10, and 16
+                                    pressure ratings.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <div class="card product-card" data-category="plumbing" data-size="medium" data-brand="generic">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/plumbing.jpg" alt="Gate Valves and Ball Valves"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Plumbing</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Industrial Grade</span>
+                                <h4>Valves & Stopcocks</h4>
+                                <p>Gate valves, ball valves, and stopcocks in brass and PVC. For water and industrial
+                                    applications.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <!-- ===== PAINT & COATINGS ===== -->
+                        <div class="category-header" id="paint">
+                            <h3>🎨 Paint & Coatings</h3>
+                        </div>
+
+                        <div class="card product-card" data-category="paint" data-size="small" data-brand="generic">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/paint-can.svg" alt="Spray Paint assorted colors"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Paint</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Premium Range</span>
+                                <h4>Spray Paint</h4>
+                                <p>Fast-drying aerosol spray paint in a wide range of colors. Suitable for metal, wood,
+                                    and plastic.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <div class="card product-card" data-category="paint" data-size="medium" data-brand="generic">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/paint-can.svg" alt="Anti-rust Primer and Coating"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Paint</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Industrial Grade</span>
+                                <h4>Anti-Rust Primer</h4>
+                                <p>Red oxide and zinc-rich anti-rust primer for steel protection. Available in 1L and 5L
+                                    tins.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                        <div class="card product-card" data-category="paint" data-size="large" data-brand="generic">
+                            <div class="card-img-wrapper">
+                                <img src="../assets/images/paint-can.svg" alt="Enamel Paint various colors"
+                                    class="card-img" loading="lazy">
+                                <span class="product-category-tag">Paint</span>
+                            </div>
+                            <div class="card-body">
+                                <span class="product-brand">Premium Range</span>
+                                <h4>Enamel Paint</h4>
+                                <p>High-gloss enamel paint for metal and wood surfaces. Weather-resistant and durable
+                                    finish.</p>
+                                <a href="about.html#contact" class="btn btn-primary btn-small">Enquire Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../assets/images/logo.png" alt="Top Fasteners" class="footer-logo" width="50" height="50">
+                    <p>South Africa's trusted supplier of industrial bolts, nuts, power tools, plumbing supplies and
+                        paint coatings.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#power-tools">Power Tools</a></li>
+                        <li><a href="#bolts-nuts">Bolts & Nuts</a></li>
+                        <li><a href="#cutting-tools">Cutting Tools</a></li>
+                        <li><a href="#plumbing">Plumbing Pipes</a></li>
+                        <li><a href="#paint">Paint & Coatings</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@topfasteners.co.za">info@topfasteners.co.za</a></li>
+                        <li><a href="tel:+27000000000">+27 (0) 00 000 0000</a></li>
+                        <li style="color:var(--grey-metallic);font-size:0.9rem;">Mon–Fri: 7:30AM – 5:00PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Top Fasteners. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">in</a>
+                    <a href="#" aria-label="WhatsApp">w</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <p>We use cookies to improve your experience. <a href="#" style="color:var(--green)">Privacy Policy</a></p>
+            <div class="cookie-buttons">
+                <button class="btn btn-primary btn-small" id="cookieAcceptAll">Accept All</button>
+                <button class="btn btn-secondary btn-small" id="cookieEssential">Essential Only</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
