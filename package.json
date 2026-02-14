@@ -1,0 +1,22 @@
+{
+  "name": "top-fasteners",
+  "version": "1.0.0",
+  "description": "Industrial website for Top Fasteners",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server . -p 8080 -c-1 --cors",
+    "predeploy": "echo Starting Deployment...",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [
+    "industrial",
+    "fasteners",
+    "website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "http-server": "^14.1.1"
+  }
+}
