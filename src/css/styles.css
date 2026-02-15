@@ -349,7 +349,7 @@ p {
 }
 
 .brand-logo {
-  height: clamp(40px, 6vw, 55px);
+  height: clamp(60px, 10vw, 85px);
   width: auto;
   object-fit: contain;
   transition: transform var(--transition-fast);
