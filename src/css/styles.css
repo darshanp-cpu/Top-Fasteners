@@ -324,20 +324,11 @@ p {
 
 .header.scrolled {
   position: fixed;
-  /* Carbon fiber texture matching tflogo.jpeg background */
-  background:
-    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-  background-color: #131313;
-  background-size: 20px 20px;
+  background: rgba(13, 13, 13, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
-  border-bottom: 1px solid rgba(76, 175, 80, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(76, 175, 80, 0.15);
 }
 
 .nav {
@@ -358,7 +349,7 @@ p {
 }
 
 .brand-logo {
-  height: clamp(50px, 8vw, 70px);
+  height: clamp(40px, 6vw, 55px);
   width: auto;
   object-fit: contain;
   transition: transform var(--transition-fast);
