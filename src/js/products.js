@@ -69,7 +69,7 @@
     // Clear filters
     if (clearFilters) {
         clearFilters.addEventListener('click', () => {
-            allCheckboxes.forEach(cb => { cb.checked = true; });
+            allCheckboxes.forEach(cb => { cb.checked = false; });
             applyFilters();
         });
     }
