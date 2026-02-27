@@ -116,4 +116,14 @@
         }
     });
 
+    // ---- Pre-populate Contact Form Message ----
+    const contactMessageTextarea = document.getElementById('message');
+    if (contactMessageTextarea) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const productName = urlParams.get('product');
+        if (productName) {
+            contactMessageTextarea.value = `Hi Top Fasteners team,\n\nI would like to enquire about the ${productName}. Please provide more information.\n\nThank you.`;
+        }
+    }
+
 })();
