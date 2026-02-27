@@ -25,7 +25,7 @@
 
     // Filter logic
     function getActiveFilters() {
-        const filters = { category: [], size: [], brand: [] };
+        const filters = { category: [], brand: [] };
         allCheckboxes.forEach(cb => {
             if (cb.checked) {
                 filters[cb.dataset.filter].push(cb.value);
@@ -39,14 +39,12 @@
 
         productCards.forEach(card => {
             const cat = card.dataset.category;
-            const size = card.dataset.size;
             const brand = card.dataset.brand;
 
             const catMatch = filters.category.length === 0 || filters.category.includes(cat);
-            const sizeMatch = filters.size.length === 0 || filters.size.includes(size);
             const brandMatch = filters.brand.length === 0 || filters.brand.includes(brand);
 
-            card.style.display = (catMatch && sizeMatch && brandMatch) ? '' : 'none';
+            card.style.display = (catMatch && brandMatch) ? '' : 'none';
         });
 
         // Hide category headers if no visible cards in that category
@@ -55,6 +53,13 @@
             const visibleCards = grid.querySelectorAll(`.product-card[data-category="${catId}"]:not([style*="display: none"])`);
             header.style.display = visibleCards.length > 0 ? '' : 'none';
         });
+
+        // Handle UNIDELTA Callout Box visibility
+        const unideltaCallout = document.querySelector('.unidelta-callout');
+        if (unideltaCallout) {
+            const unideltaHeaderVisible = document.getElementById('plumbing').style.display !== 'none';
+            unideltaCallout.style.display = unideltaHeaderVisible ? '' : 'none';
+        }
     }
 
     allCheckboxes.forEach(cb => {

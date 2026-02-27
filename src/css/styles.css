@@ -1644,3 +1644,82 @@ p {
     transform: rotate(360deg);
   }
 }
+
+/* ---- Trust Bar ---- */
+.trust-bar {
+  margin-top: var(--space-xl);
+  padding: var(--space-md) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.trust-label {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  color: var(--grey-metallic);
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.trust-brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-lg);
+}
+
+.trust-brands span {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--white);
+  opacity: 0.7;
+  transition: all var(--transition-fast);
+  cursor: default;
+}
+
+.trust-brands span:hover {
+  opacity: 1;
+  color: var(--green);
+  transform: translateY(-2px);
+}
+
+/* ---- Technical Specs Table ---- */
+.table-responsive {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--grey-dark);
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--black-card);
+  text-align: left;
+}
+
+.specs-table th {
+  background: var(--black);
+  color: var(--green);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--grey-dark);
+}
+
+.specs-table td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--grey-dark);
+  color: var(--grey-metallic);
+  font-size: 0.95rem;
+}
+
+.specs-table tbody tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--white);
+}
