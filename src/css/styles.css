@@ -1677,10 +1677,13 @@ p {
   display: flex;
   overflow: hidden;
   user-select: none;
-  gap: var(--space-xl);
   width: 100%;
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
 }
 
 .marquee-track {
@@ -1688,7 +1691,8 @@ p {
   align-items: center;
   flex-shrink: 0;
   min-width: 100%;
-  gap: 2rem;
+  gap: 3rem;
+  padding: 0 1.5rem;
   animation: scroll 22s linear infinite;
 }
 
@@ -1702,47 +1706,49 @@ p {
   }
 
   to {
-    transform: translateX(calc(-100% - var(--space-xl)));
+    transform: translateX(calc(-100% - 3rem));
   }
 }
 
-.marquee-track img,
-.marquee-track span {
-  height: 70px;
+.marquee-track img {
+  height: 80px;
   width: auto;
-  min-width: 140px;
-  max-width: 200px;
+  max-width: 180px;
   object-fit: contain;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 14px 28px;
-  border-radius: 12px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.55);
-  filter: none;
-  opacity: 0.9;
-  transition: all 0.3s ease;
-  cursor: default;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-shrink: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
 }
 
 .marquee-track span {
   font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.6rem;
+  font-weight: 800;
+  font-size: 1.8rem;
   color: #111;
   line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 0px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.marquee-track img:hover,
-.marquee-track span:hover {
+/* Separator dots between items */
+.marquee-track img+img,
+.marquee-track span+img,
+.marquee-track img+span,
+.marquee-track span+span {
+  position: relative;
+}
+
+.marquee-track img:hover {
+  transform: scale(1.12);
   opacity: 1;
-  transform: translateY(-8px) scale(1.1);
-  box-shadow: 0 16px 40px rgba(76, 175, 80, 0.35), 0 6px 25px rgba(0, 0, 0, 0.55);
-  color: #111;
+}
+
+.marquee-track span:hover {
+  transform: scale(1.12);
+  color: var(--green);
 }
 
 /* ---- Technical Specs Table ---- */
