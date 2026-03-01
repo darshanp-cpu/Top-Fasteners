@@ -29,7 +29,7 @@ def crop_and_trim(roi, name):
     pts = cv2.findNonZero(roi_thresh)
     if pts is not None:
         rx, ry, rw, rh = cv2.boundingRect(pts)
-        pad = 20
+        pad = 2
         rx = max(0, rx - pad)
         ry = max(0, ry - pad)
         rw = min(roi.shape[1] - rx, rw + pad * 2)
