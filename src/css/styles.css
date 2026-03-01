@@ -1692,7 +1692,7 @@ p {
   flex-shrink: 0;
   min-width: 100%;
   gap: 3rem;
-  padding: 0 1.5rem;
+  padding: 0;
   animation: scroll 22s linear infinite;
 }
 
@@ -1700,13 +1700,18 @@ p {
   animation-play-state: paused;
 }
 
+/* 
+  Seamless loop fix: both tracks together = 200% width.
+  Moving by -50% of the combined width = exactly -1 track width.
+  This creates a perfect continuous loop with zero glitch.
+*/
 @keyframes scroll {
   from {
     transform: translateX(0);
   }
 
   to {
-    transform: translateX(calc(-100% - 3rem));
+    transform: translateX(-50%);
   }
 }
 
@@ -1733,14 +1738,6 @@ p {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Separator dots between items */
-.marquee-track img+img,
-.marquee-track span+img,
-.marquee-track img+span,
-.marquee-track span+span {
-  position: relative;
-}
-
 .marquee-track img:hover {
   transform: scale(1.12);
   opacity: 1;
@@ -1751,13 +1748,15 @@ p {
   color: var(--green);
 }
 
-/* Scale up logos that have white card padding baked into their source image */
+/* Scale up logos that have white card padding baked into their source image.
+   Extra margin compensates for scale() not expanding layout space. */
 .marquee-track img[alt="Pratley"],
 .marquee-track img[alt="Herschell"],
 .marquee-track img[alt="Spanjaard"],
 .marquee-track img[alt="Glue Devil"] {
   transform: scale(1.65);
   transform-origin: center center;
+  margin: 0 2rem;
 }
 
 .marquee-track img[alt="Pratley"]:hover,
@@ -1765,6 +1764,15 @@ p {
 .marquee-track img[alt="Spanjaard"]:hover,
 .marquee-track img[alt="Glue Devil"]:hover {
   transform: scale(1.8);
+}
+
+/* Repex logo sits too high due to crop — nudge it down into alignment */
+.marquee-track img[alt="Repex"] {
+  transform: translateY(6px);
+}
+
+.marquee-track img[alt="Repex"]:hover {
+  transform: translateY(6px) scale(1.12);
 }
 
 /* ---- Technical Specs Table ---- */
