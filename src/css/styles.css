@@ -1686,25 +1686,27 @@ p {
   mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
 }
 
+/* .marquee-inner holds BOTH tracks. Animating this single element with
+   translateX(-50%) moves it by exactly one track width (since inner = 2 tracks),
+   guaranteeing a seamless, glitch-free infinite loop. */
+.marquee-inner {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.marquee-wrapper:hover .marquee-inner {
+  animation-play-state: paused;
+}
+
 .marquee-track {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  min-width: 100%;
   gap: 3rem;
-  padding: 0;
-  animation: scroll 22s linear infinite;
+  padding: 0 1.5rem;
 }
 
-.marquee-wrapper:hover .marquee-track {
-  animation-play-state: paused;
-}
-
-/* 
-  Seamless loop fix: both tracks together = 200% width.
-  Moving by -50% of the combined width = exactly -1 track width.
-  This creates a perfect continuous loop with zero glitch.
-*/
 @keyframes scroll {
   from {
     transform: translateX(0);
