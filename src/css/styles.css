@@ -1751,6 +1751,22 @@ p {
   color: var(--green);
 }
 
+/* Scale up logos that have white card padding baked into their source image */
+.marquee-track img[alt="Pratley"],
+.marquee-track img[alt="Herschell"],
+.marquee-track img[alt="Spanjaard"],
+.marquee-track img[alt="Glue Devil"] {
+  transform: scale(1.65);
+  transform-origin: center center;
+}
+
+.marquee-track img[alt="Pratley"]:hover,
+.marquee-track img[alt="Herschell"]:hover,
+.marquee-track img[alt="Spanjaard"]:hover,
+.marquee-track img[alt="Glue Devil"]:hover {
+  transform: scale(1.8);
+}
+
 /* ---- Technical Specs Table ---- */
 .table-responsive {
   overflow-x: auto;
